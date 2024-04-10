@@ -16,7 +16,16 @@ setTimeout(function(){
     console.log("Hassam")
 },2000)
 //IN setTimeout IT WILL PRINT HASSAM AFTER TWO SECONDS ONLY ONE TIME
+   
 
+//Now i will change text of H1 tag by Query Selector
+
+const changeText=()=>{
+    document.querySelector('h1').innerHTML="Learning with Chai and Code"
+}
+
+<!-- setTimeout(changeText, 1000) -->
+setInterval(changeText, 1000)
 </script>
 </body>
 </html>
