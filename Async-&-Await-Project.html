@@ -26,7 +26,9 @@ const changeText=()=>{
 
 const changeMe=setTimeout(changeText, 1000)
 
-document.querySelector('stop').addEventListener('click',clearTimeout(changeMe))
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeMe)
+})
 console.log("Stopped")
 //clearTimeout(changeMe); it is no sutiable method
 
