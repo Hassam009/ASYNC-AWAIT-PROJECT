@@ -24,8 +24,14 @@ const changeText=()=>{
     document.querySelector('h1').innerHTML="Learning with Chai and Code"
 }
 
-<!-- setTimeout(changeText, 1000) -->
-setInterval(changeText, 1000)
+const changeMe=setTimeout(changeText, 1000)
+
+document.querySelector('stop').addEventListener('click',clearTimeout(changeMe))
+console.log("Stopped")
+//clearTimeout(changeMe); it is no sutiable method
+
+
+//setInterval(changeText, 1000)
 </script>
 </body>
 </html>
